@@ -1,0 +1,1700 @@
+Started GET "/" for 127.0.0.1 at 2023-04-06 00:11:22 +0300
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20221128082448_create_users.rb
+20230405170011_create_properties.rb
+20230405170113_create_bookings.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-04-06 00:13:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20221128082448_create_users.rb
+20230405170011_create_properties.rb
+20230405170113_create_bookings.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-04-06 00:13:20 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20221128082448_create_users.rb
+20230405170011_create_properties.rb
+20230405170113_create_bookings.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-04-06 00:13:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20221128082448_create_users.rb
+20230405170011_create_properties.rb
+20230405170113_create_bookings.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-04-06 00:13:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20221128082448_create_users.rb
+20230405170011_create_properties.rb
+20230405170113_create_bookings.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-04-06 00:14:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20221128082448_create_users.rb
+20230405170011_create_properties.rb
+20230405170113_create_bookings.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20221128082448)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "role" varchar DEFAULT 'user', "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221128082448"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProperties (20230405170011)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "properties" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" varchar, "location" varchar, "price" varchar, "type_of_house" varchar, "category" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230405170011"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBookings (20230405170113)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phone_number" varchar, "move_in_date" date, "user_id" integer NOT NULL, "property_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_ef0571f117"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_95b2761688"
+FOREIGN KEY ("property_id")
+  REFERENCES "properties" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_user_id" ON "bookings" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_property_id" ON "bookings" ("property_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230405170113"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-04-05 21:15:15.820206"], ["updated_at", "2023-04-05 21:15:15.820206"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProperty Create (0.5ms)[0m  [1m[32mINSERT INTO "properties" ("id", "name", "image", "location", "price", "type_of_house", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "Red Carpet Real Estate"], ["image", "https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg"], ["location", "Kilimani, Nairobi"], ["price", "50,000"], ["type_of_house", "Apartment"], ["category", "3-bedroom"], ["created_at", "2023-04-05 21:15:25.695066"], ["updated_at", "2023-04-05 21:15:25.695066"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProperty Create (0.3ms)[0m  [1m[32mINSERT INTO "properties" ("id", "name", "image", "location", "price", "type_of_house", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["name", "Fairmount Properties"], ["image", "https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg"], ["location", "Ruaka, Nairobi"], ["price", "45,000"], ["type_of_house", "Condos"], ["category", "2-bedroom"], ["created_at", "2023-04-05 21:15:25.705495"], ["updated_at", "2023-04-05 21:15:25.705495"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProperty Create (0.3ms)[0m  [1m[32mINSERT INTO "properties" ("id", "name", "image", "location", "price", "type_of_house", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 3], ["name", "The Real Estate Corner"], ["image", "https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg"], ["location", "Kileleshwa, Nairobi"], ["price", "47,000"], ["type_of_house", "Apartment"], ["category", "1-bedroom"], ["created_at", "2023-04-05 21:15:25.716516"], ["updated_at", "2023-04-05 21:15:25.716516"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProperty Create (0.3ms)[0m  [1m[32mINSERT INTO "properties" ("id", "name", "image", "location", "price", "type_of_house", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 4], ["name", "Herringbone Realty"], ["image", "https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg"], ["location", "Parklands, Nairobi"], ["price", "75,400"], ["type_of_house", "Villa"], ["category", "2-bedroom"], ["created_at", "2023-04-05 21:15:25.723909"], ["updated_at", "2023-04-05 21:15:25.723909"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProperty Create (0.4ms)[0m  [1m[32mINSERT INTO "properties" ("id", "name", "image", "location", "price", "type_of_house", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 5], ["name", "Brick Lane Realty"], ["image", "https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg"], ["location", "Loresho, Nairobi"], ["price", "48,500"], ["type_of_house", "Apartment"], ["category", "3-bedroom"], ["created_at", "2023-04-05 21:15:25.731372"], ["updated_at", "2023-04-05 21:15:25.731372"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProperty Create (0.4ms)[0m  [1m[32mINSERT INTO "properties" ("id", "name", "image", "location", "price", "type_of_house", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 6], ["name", "Banyon Tree Realty"], ["image", "https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg"], ["location", "Kitisuru, Nairobi"], ["price", "47,200"], ["type_of_house", "Apartment"], ["category", "2-bedroom"], ["created_at", "2023-04-05 21:15:25.740264"], ["updated_at", "2023-04-05 21:15:25.740264"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "first_name", "last_name", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "admin"], ["password_digest", "[FILTERED]"], ["email", "admin@gmail.com"], ["first_name", "admin"], ["last_name", "admin"], ["role", "admin"], ["created_at", "2023-04-05 21:15:26.093486"], ["updated_at", "2023-04-05 21:15:26.093486"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "first_name", "last_name", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "user1"], ["password_digest", "[FILTERED]"], ["email", "userone@gmail.com"], ["first_name", "user"], ["last_name", "tow"], ["role", "user"], ["created_at", "2023-04-05 21:15:26.414834"], ["updated_at", "2023-04-05 21:15:26.414834"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "first_name", "last_name", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "user2"], ["password_digest", "[FILTERED]"], ["email", "usertwo@gmail.com"], ["first_name", "user"], ["last_name", "two"], ["role", "user"], ["created_at", "2023-04-05 21:15:26.728530"], ["updated_at", "2023-04-05 21:15:26.728530"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooking Create (0.4ms)[0m  [1m[32mINSERT INTO "bookings" ("phone_number", "move_in_date", "user_id", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["phone_number", "0712345678"], ["move_in_date", "2021-12-12"], ["user_id", 2], ["property_id", 1], ["created_at", "2023-04-05 21:15:26.794438"], ["updated_at", "2023-04-05 21:15:26.794438"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBooking Create (0.4ms)[0m  [1m[32mINSERT INTO "bookings" ("phone_number", "move_in_date", "user_id", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["phone_number", "0712345678"], ["move_in_date", "2021-12-12"], ["user_id", 2], ["property_id", 2], ["created_at", "2023-04-05 21:15:26.811427"], ["updated_at", "2023-04-05 21:15:26.811427"]]
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2023-04-06 00:15:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.2ms | Allocations: 393)
+Completed 200 OK in 16ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 4367)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-04-06 00:15:36 +0300
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Alvin", "last_name"=>"Mithamo", "password"=>"[FILTERED]", "email"=>"alvinmithamo@gmail.com", "username"=>"alvin"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "first_name", "last_name", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "alvin"], ["password_digest", "[FILTERED]"], ["email", "alvinmithamo@gmail.com"], ["first_name", "Alvin"], ["last_name", "Mithamo"], ["role", "user"], ["created_at", "2023-04-05 21:15:37.173926"], ["updated_at", "2023-04-05 21:15:37.173926"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.58ms)
+Completed 200 OK in 359ms (Views: 10.1ms | ActiveRecord: 5.8ms | Allocations: 23874)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:15:37 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:15:37 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers]   [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.32ms)
+Completed 202 Accepted in 27ms (Views: 5.5ms | ActiveRecord: 0.9ms | Allocations: 6271)
+
+
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (101.92ms)
+Completed 200 OK in 157ms (Views: 144.1ms | ActiveRecord: 3.6ms | Allocations: 58051)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:15:37 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (2.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (49.51ms)
+Completed 200 OK in 53ms (Views: 49.5ms | ActiveRecord: 3.4ms | Allocations: 7763)
+
+
+Started GET "/properties/1" for 127.0.0.1 at 2023-04-06 00:15:53 +0300
+Processing by PropertiesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:11:in `show'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:12:in `show'
+[active_model_serializers] Rendered PropertySerializer with ActiveModelSerializers::Adapter::Attributes (4.9ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.7ms | Allocations: 1970)
+
+
+Started GET "/properties/1" for 127.0.0.1 at 2023-04-06 00:15:53 +0300
+Processing by PropertiesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:11:in `show'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:12:in `show'
+[active_model_serializers] Rendered PropertySerializer with ActiveModelSerializers::Adapter::Attributes (4.39ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 1780)
+
+
+Started GET "/my_bookings/4" for 127.0.0.1 at 2023-04-06 00:15:56 +0300
+Processing by BookingsController#my_bookings as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:56:in `my_bookings'
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/bookings_controller.rb:57:in `map'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 17ms (Views: 1.0ms | ActiveRecord: 2.2ms | Allocations: 1889)
+
+
+Started GET "/my_bookings/4" for 127.0.0.1 at 2023-04-06 00:15:56 +0300
+Processing by BookingsController#my_bookings as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:56:in `my_bookings'
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/bookings_controller.rb:57:in `map'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1152)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:15:59 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.69ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 1.3ms | Allocations: 7783)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:15:59 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.8ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 1.2ms | Allocations: 7749)
+
+
+Started GET "/properties/1" for 127.0.0.1 at 2023-04-06 00:16:01 +0300
+Processing by PropertiesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:11:in `show'
+[active_model_serializers]   [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:12:in `show'
+[active_model_serializers] Rendered PropertySerializer with ActiveModelSerializers::Adapter::Attributes (6.95ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.7ms | Allocations: 1778)
+
+
+Started GET "/properties/1" for 127.0.0.1 at 2023-04-06 00:16:01 +0300
+Processing by PropertiesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:11:in `show'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:12:in `show'
+[active_model_serializers] Rendered PropertySerializer with ActiveModelSerializers::Adapter::Attributes (5.92ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 1776)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2023-04-06 00:16:13 +0300
+Processing by BookingsController#create as */*
+  Parameters: {"phone_number"=>"0706824750", "move_in_date"=>"2023-04-28", "property_id"=>1, "user_id"=>4, "booking"=>{"phone_number"=>"0706824750", "move_in_date"=>"2023-04-28", "user_id"=>4, "property_id"=>1}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mBooking Create (4.6ms)[0m  [1m[32mINSERT INTO "bookings" ("phone_number", "move_in_date", "user_id", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["phone_number", "0706824750"], ["move_in_date", "2023-04-28"], ["user_id", 4], ["property_id", 1], ["created_at", "2023-04-05 21:16:13.605218"], ["updated_at", "2023-04-05 21:16:13.605218"]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+[active_model_serializers] Rendered BookingSerializer with ActiveModelSerializers::Adapter::Attributes (1.57ms)
+Completed 200 OK in 25ms (Views: 2.4ms | ActiveRecord: 9.5ms | Allocations: 4889)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2023-04-06 00:16:15 +0300
+Processing by BookingsController#create as */*
+  Parameters: {"phone_number"=>"", "move_in_date"=>"", "property_id"=>1, "user_id"=>4, "booking"=>{"phone_number"=>"", "move_in_date"=>"", "user_id"=>4, "property_id"=>1}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mBooking Create (3.2ms)[0m  [1m[32mINSERT INTO "bookings" ("phone_number", "move_in_date", "user_id", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["phone_number", ""], ["move_in_date", nil], ["user_id", 4], ["property_id", 1], ["created_at", "2023-04-05 21:16:15.289383"], ["updated_at", "2023-04-05 21:16:15.289383"]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mTRANSACTION (65.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+[active_model_serializers] Rendered BookingSerializer with ActiveModelSerializers::Adapter::Attributes (1.19ms)
+Completed 200 OK in 81ms (Views: 1.9ms | ActiveRecord: 69.1ms | Allocations: 3921)
+
+
+Started GET "/my_bookings/4" for 127.0.0.1 at 2023-04-06 00:16:17 +0300
+Processing by BookingsController#my_bookings as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:56:in `my_bookings'
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/bookings_controller.rb:57:in `map'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67:in `block in my_bookings'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67:in `block in my_bookings'
+No serializer found for resource: {:id=>3, :user_id=>4, :user_first_name=>"Alvin", :user_last_name=>"Mithamo", :user_email=>"alvinmithamo@gmail.com", :property_id=>1, :phone_number=>"0706824750", :move_in_date=>Fri, 28 Apr 2023, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.38ms)
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 0.5ms | Allocations: 2716)
+
+
+Started GET "/my_bookings/4" for 127.0.0.1 at 2023-04-06 00:16:17 +0300
+Processing by BookingsController#my_bookings as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:56:in `my_bookings'
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/bookings_controller.rb:57:in `map'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67:in `block in my_bookings'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67:in `block in my_bookings'
+No serializer found for resource: {:id=>3, :user_id=>4, :user_first_name=>"Alvin", :user_last_name=>"Mithamo", :user_email=>"alvinmithamo@gmail.com", :property_id=>1, :phone_number=>"0706824750", :move_in_date=>Fri, 28 Apr 2023, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.39ms)
+Completed 200 OK in 13ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 2584)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:16:20 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (38.52ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 1.2ms | Allocations: 8075)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:16:20 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (97.12ms)
+Completed 200 OK in 102ms (Views: 100.7ms | ActiveRecord: 1.2ms | Allocations: 8076)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:16:21 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 240)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-04-06 00:16:31 +0300
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"admin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "admin"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 202 Accepted in 306ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1381)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:16:32 +0300
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:16:32 +0300
+Processing by PropertiesController#index as */*
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.24ms)
+Completed 202 Accepted in 7ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2110)
+
+
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (3.0ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.91ms)
+Completed 200 OK in 46ms (Views: 41.2ms | ActiveRecord: 4.5ms | Allocations: 11018)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:16:32 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.01ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 1.3ms | Allocations: 8540)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:16:32 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.96ms)
+Completed 200 OK in 29ms (Views: 2.1ms | ActiveRecord: 1.2ms | Allocations: 5679)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:16:32 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.78ms)
+Completed 200 OK in 23ms (Views: 1.7ms | ActiveRecord: 3.1ms | Allocations: 5602)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:23:22 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | Allocations: 224)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:27:25 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.44ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.2ms | Allocations: 229)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:27:26 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | Allocations: 228)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProperty Create (0.3ms)[0m  [1m[32mINSERT INTO "properties" ("id", "name", "image", "location", "price", "type_of_house", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "Red Carpet Real Estate"], ["image", "https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg"], ["location", "Kilimani, Nairobi"], ["price", "50,000"], ["type_of_house", "Apartment"], ["category", "3-bedroom"], ["created_at", "2023-04-05 21:30:40.588814"], ["updated_at", "2023-04-05 21:30:40.588814"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/" for 127.0.0.1 at 2023-04-06 00:31:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.8ms | Allocations: 831)
+Completed 200 OK in 30ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 7634)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-04-06 00:31:25 +0300
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"admin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "admin"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.13ms)
+Completed 202 Accepted in 383ms (Views: 12.6ms | ActiveRecord: 1.4ms | Allocations: 25554)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:31:25 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:31:25 +0300
+Completed 202 Accepted in 22ms (Views: 16.9ms | ActiveRecord: 0.3ms | Allocations: 3379)
+
+
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (1.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:31:25 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+[active_model_serializers]   [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.69ms)
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+Completed 200 OK in 128ms (Views: 4.8ms | ActiveRecord: 1.7ms | Allocations: 32059)
+
+
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (204.91ms)
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:31:26 +0300
+Completed 200 OK in 279ms (Views: 262.5ms | ActiveRecord: 4.4ms | Allocations: 64582)
+
+
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:31:26 +0300
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Processing by PropertiesController#index as */*
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+[active_model_serializers]   [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.86ms)
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+Completed 200 OK in 43ms (Views: 4.9ms | ActiveRecord: 1.4ms | Allocations: 8901)
+
+
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.39ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 1.2ms | Allocations: 9722)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:31:36 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 246)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-04-06 00:32:04 +0300
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Allan", "last_name"=>"Namu", "password"=>"[FILTERED]", "email"=>"allan@gmail.com", "username"=>"allan"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "first_name", "last_name", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "allan"], ["password_digest", "[FILTERED]"], ["email", "allan@gmail.com"], ["first_name", "Allan"], ["last_name", "Namu"], ["role", "user"], ["created_at", "2023-04-05 21:32:04.856044"], ["updated_at", "2023-04-05 21:32:04.856044"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (13.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Completed 200 OK in 351ms (Views: 0.8ms | ActiveRecord: 13.9ms | Allocations: 3000)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:32:05 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (4.24ms)
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:32:05 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.53ms)
+Completed 202 Accepted in 10ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 2114)
+
+
+Completed 200 OK in 31ms (Views: 7.8ms | ActiveRecord: 0.9ms | Allocations: 6104)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:32:05 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.85ms)
+Completed 200 OK in 27ms (Views: 1.6ms | ActiveRecord: 1.1ms | Allocations: 5601)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:32:05 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.88ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 1.1ms | Allocations: 8074)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:32:05 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.82ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 1.2ms | Allocations: 8074)
+
+
+Started GET "/properties/2" for 127.0.0.1 at 2023-04-06 00:32:17 +0300
+Processing by PropertiesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:11:in `show'
+[active_model_serializers]   [1m[36mBooking Load (1.5ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:12:in `show'
+[active_model_serializers] Rendered PropertySerializer with ActiveModelSerializers::Adapter::Attributes (10.6ms)
+Completed 200 OK in 20ms (Views: 11.0ms | ActiveRecord: 1.7ms | Allocations: 1924)
+
+
+Started GET "/properties/2" for 127.0.0.1 at 2023-04-06 00:32:17 +0300
+Processing by PropertiesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:11:in `show'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:12:in `show'
+[active_model_serializers] Rendered PropertySerializer with ActiveModelSerializers::Adapter::Attributes (4.64ms)
+Completed 200 OK in 19ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 1789)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2023-04-06 00:32:36 +0300
+Processing by BookingsController#create as */*
+  Parameters: {"phone_number"=>"0712345678", "move_in_date"=>"2023-04-26", "property_id"=>2, "user_id"=>5, "booking"=>{"phone_number"=>"0712345678", "move_in_date"=>"2023-04-26", "user_id"=>5, "property_id"=>2}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mBooking Create (0.5ms)[0m  [1m[32mINSERT INTO "bookings" ("phone_number", "move_in_date", "user_id", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["phone_number", "0712345678"], ["move_in_date", "2023-04-26"], ["user_id", 5], ["property_id", 2], ["created_at", "2023-04-05 21:32:36.077840"], ["updated_at", "2023-04-05 21:32:36.077840"]]
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+  [1m[36mTRANSACTION (17.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookings_controller.rb:37:in `create'
+[active_model_serializers] Rendered BookingSerializer with ActiveModelSerializers::Adapter::Attributes (2.8ms)
+Completed 200 OK in 32ms (Views: 3.8ms | ActiveRecord: 17.8ms | Allocations: 4255)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:32:42 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (5.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.88ms)
+Completed 200 OK in 46ms (Views: 39.5ms | ActiveRecord: 6.5ms | Allocations: 8243)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:32:42 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (53.16ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 1.2ms | Allocations: 8243)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:35:22 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 229)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-04-06 00:36:39 +0300
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"admin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "admin"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 202 Accepted in 346ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 900)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:36:39 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.24ms)
+Completed 202 Accepted in 16ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 2090)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:36:39 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.99ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 2.2ms | Allocations: 8243)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:36:39 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.88ms)
+Completed 200 OK in 31ms (Views: 1.7ms | ActiveRecord: 1.3ms | Allocations: 6841)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:37:45 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 222)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-04-06 00:37:51 +0300
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"admin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "admin"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.28ms)
+Completed 202 Accepted in 338ms (Views: 0.9ms | ActiveRecord: 0.9ms | Allocations: 853)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:37:51 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:37:51 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.25ms)
+Completed 202 Accepted in 9ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 2088)
+
+
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.18ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 1.1ms | Allocations: 11676)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:37:51 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.2ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 1.2ms | Allocations: 8245)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:37:51 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.89ms)
+Completed 200 OK in 28ms (Views: 3.7ms | ActiveRecord: 1.1ms | Allocations: 6842)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:37:51 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.86ms)
+Completed 200 OK in 32ms (Views: 1.5ms | ActiveRecord: 1.2ms | Allocations: 6841)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:38:28 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.33ms)
+Completed 200 OK in 55ms (Views: 2.2ms | ActiveRecord: 1.4ms | Allocations: 6843)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:38:36 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.88ms)
+Completed 200 OK in 31ms (Views: 2.3ms | ActiveRecord: 1.6ms | Allocations: 6842)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:39:51 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.03ms)
+Completed 200 OK in 45ms (Views: 2.0ms | ActiveRecord: 1.2ms | Allocations: 6841)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:39:58 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.75ms)
+Completed 200 OK in 25ms (Views: 1.7ms | ActiveRecord: 1.1ms | Allocations: 6841)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:40:04 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.18ms)
+Completed 200 OK in 37ms (Views: 2.3ms | ActiveRecord: 1.3ms | Allocations: 6841)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:40:22 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.8ms)
+Completed 200 OK in 71ms (Views: 1.6ms | ActiveRecord: 1.1ms | Allocations: 6841)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:40:35 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.01ms)
+Completed 200 OK in 34ms (Views: 1.7ms | ActiveRecord: 1.1ms | Allocations: 6841)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:40:39 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.81ms)
+Completed 200 OK in 29ms (Views: 1.6ms | ActiveRecord: 1.2ms | Allocations: 6841)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:45:01 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (4.87ms)
+Completed 200 OK in 32ms (Views: 5.7ms | ActiveRecord: 1.6ms | Allocations: 6841)
+
+
+Started GET "/properties" for 127.0.0.1 at 2023-04-06 00:45:58 +0300
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 1]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 2]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (8.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 3]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 4]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 5]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."property_id" = ?[0m  [["property_id", 6]]
+[active_model_serializers]   ↳ app/controllers/properties_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.15ms)
+Completed 200 OK in 45ms (Views: 35.2ms | ActiveRecord: 9.2ms | Allocations: 8243)
+
+
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 00:45:58 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 202 Accepted in 7ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2088)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2023-04-06 00:45:59 +0300
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:7:in `map'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:11:in `block in index'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:17:in `block in index'
+No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user", :user_last_name=>"tow", :user_email=>"userone@gmail.com", :property_id=>1, :phone_number=>"0712345678", :move_in_date=>Sun, 12 Dec 2021, :name=>"Red Carpet Real Estate", :image=>"https://res.cloudinary.com/dakiak4mc/image/upload/v1680716041/r-architecture-MAnVoJlQUvg-unsplash_f6dlmw.jpg", :location=>"Kilimani, Nairobi", :price=>"50,000", :type_of_house=>"Apartment", :category=>"3-bedroom"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.09ms)
+Completed 200 OK in 48ms (Views: 2.7ms | ActiveRecord: 1.1ms | Allocations: 6843)
+
+
