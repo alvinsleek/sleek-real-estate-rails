@@ -1698,3 +1698,11 @@ No serializer found for resource: {:id=>1, :user_id=>2, :user_first_name=>"user"
 Completed 200 OK in 48ms (Views: 2.7ms | ActiveRecord: 1.1ms | Allocations: 6843)
 
 
+Started GET "/api/v1/profile" for 127.0.0.1 at 2023-04-06 01:07:46 +0300
+Processing by Api::V1::UsersController#profile as */*
+  Parameters: {"user"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.44ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.4ms | Allocations: 223)
+
+
